@@ -1,9 +1,16 @@
-# sushiba
+# Sushiba
+
+Install
+```
+npm install
+```
 
 How to start Web
-$ sudo http-server -p 80
+```
+$ http-server
+```
 
-How to start night
-
-$ cd night-food
-$ node --harmony index.js
+How to start test
+```
+$ node --harmony spec.js
+```
