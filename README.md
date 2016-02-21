@@ -7,7 +7,7 @@ npm install
 
 How to start Web
 ```
-$ http-server
+$sudo http-server -p 80
 ```
 
 How to start test
