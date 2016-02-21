@@ -20,9 +20,9 @@ angular.module('shibaApp', [])
       {name: 'น้ำส้มคั้น',        type: 2,price: 56,pic: ' img/drink/2938B904-2FAD-4352-9ED7-44B6856E7921.png'},
       {name: 'น้ำมะม่วงมหาชนก',     type: 2,price: 50,pic: 'img/drink/025BBEB1-71FB-4221-AA9D-8DAE4802078E.png'},
       {name: 'กาแฟเย็น',          type: 2,price: 46,pic: ' img/drink/415685B6-88CE-42E9-AEE9-042250D33C3B.png'},
+      {name: 'ข้าวหน้าไก่ทอดราดซอส',type: 3, price: 169,pic: 'img/rice/D2496E8A-54C4-4634-AAFA-CF88FC6FFBED.png'},
       {name: 'ข้าวราดหน้าไก่ใส่ใข่',  type: 3, price: 129,pic: 'img/rice/75632C3B-9861-4285-B61B-4BB4A72ECBF1.png'},
       {name: 'ข้าวหน้าเนื้อ',       type: 3, price: 150,pic: 'img/rice/92F1C7EE-D59C-41E0-95C0-198D1C3B66BE.png'},
-      {name: 'ข้าวราดหน้าไก่ทอดราดซอสนัมบัง',type: 3, price: 169,pic: 'img/rice/D2496E8A-54C4-4634-AAFA-CF88FC6FFBED.png'},
       {name: 'ข้าวราดหน้าหมูชุปแป้งทอด',type: 3, price: 150,pic: 'img/rice/AF45C1CF-AE2E-47AE-A417-136C2B0AA25F.png'},
       {name: 'ข้าวหน้าหมู',         type: 3, price: 139,pic: 'img/rice/96A1FC05-B83A-4FEF-9583-66033E38CEF3.png'}]
 
@@ -47,7 +47,6 @@ angular.module('shibaApp', [])
       var totalDrink = calcTotal(drink)
       var discountFood = 0
       var discountDrink = 0
-
       if (totalDrink + totalFood >= 200) {
         discountFood = discount(totalFood, 10)
         discountDrink = discount(totalDrink, 10)
@@ -110,7 +109,6 @@ angular.module('shibaApp', [])
 
     $scope.sushi = function () {
       $scope.sushi = 1
-
     }
 
   })
